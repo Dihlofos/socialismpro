@@ -52,6 +52,10 @@
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
 
+  &:hover {
+    color: $white;
+  }
+
   @media (max-width: $laptop) {
     @include font(2.2rem, 2.4rem, 500);
     color: $white;
@@ -64,7 +68,7 @@
 
     &:hover {
       background-color: $black;
-      box-shadow: 0 0 2.5rem $black;
+      box-shadow: 0 0 1.5rem $black;
     }
   }
 }
