@@ -1,0 +1,125 @@
+.nav {
+  @media (max-width: $laptop) {
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+  }
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.4rem;
+
+  @media (max-width: $laptop) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(-100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease-in;
+    background-color: $black;
+    min-height: 100vh;
+
+    &.js-open {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.nav__item {
+  padding: 2rem 0;
+}
+
+.nav__link {
+  @include font(1.5rem, 1.7rem, 600);
+  color: $black;
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 1.8rem 2.8rem;
+  border-radius: 3rem;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+
+  @media (max-width: $laptop) {
+    @include font(2.2rem, 2.4rem, 500);
+    color: $white;
+  }
+
+  &--accent {
+    background-color: $black;
+    text-transform: uppercase;
+    color: $white;
+
+    &:hover {
+      background-color: $black;
+      box-shadow: 0 0 2.5rem $black;
+    }
+  }
+}
+
+.nav__burger {
+  display: none;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: $laptop) {
+    display: block;
+    align-self: flex-end;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 0.5rem;
+    z-index: 5;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 2px;
+      top: 50%;
+      left: 50%;
+      background-color: $white;
+      transform: translate(-50%) rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      width: 2px;
+      height: 20px;
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    &.js-open {
+      border-color: $black;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 1px;
+        top: 9px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $black;
+        box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+      }
+
+      &::after {
+        background-color: transparent;
+      }
+    }
+  }
+}

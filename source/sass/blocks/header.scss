@@ -1,0 +1,40 @@
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    svg {
+      fill: none;
+    }
+
+    @media (max-width: $mobile) {
+      width: 29rem;
+
+      svg {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: $laptop) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: transparent;
+  }
+}

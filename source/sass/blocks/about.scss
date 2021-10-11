@@ -1,0 +1,155 @@
+.about {
+  z-index: 5;
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    top: 14rem;
+    left: 5rem;
+    width: 86%;
+    height: 167%;
+    background-image: url("../img/about_bg.png");
+    background-size: cover;
+    z-index: 2;
+
+    @media (max-width: $desktop) {
+      width: 100%;
+    }
+
+    @media (max-width: $laptop) {
+      left: 1.7rem;
+      width: 100%;
+      height: 188%;
+    }
+
+    @media (max-width: $mobile) {
+      height: 49%;
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    max-width: 128rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 -1.25rem;
+  }
+
+  &__item {
+    display: flex;
+    margin: 0 1.25rem 2.5rem;
+    width: calc(33.333333% - 2.5rem);
+    background-color: $white;
+    color: $black;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 23.4rem;
+
+    @media (max-width: $tablet) {
+      width: calc(50% - 2.5rem);
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  &__number {
+    font-size: 33rem;
+    line-height: 23.4rem;
+    font-weight: 700;
+    color: $yellow;
+    opacity: 0.5;
+    width: 16.1rem;
+    flex-shrink: 0;
+
+    @media (max-width: $laptop) {
+      width: 9.1rem;
+    }
+
+    @media (max-width: $tablet) {
+      width: 16.1rem;
+    }
+
+    span {
+      position: relative;
+    }
+
+    &--1 {
+      span {
+        font-size: 34rem;
+        top: -0.5rem;
+        left: -1rem;
+      }
+    }
+
+    &--2 {
+      span {
+        font-size: 33.2rem;
+        top: -0.1rem;
+        left: -5rem;
+      }
+    }
+
+    &--3 {
+      span {
+        font-size: 33.3rem;
+        left: -5.2rem;
+        top: -0.3rem;
+      }
+    }
+
+    &--4 {
+      span {
+        font-size: 34rem;
+        left: -9.3rem;
+        top: -0.06rem;
+      }
+    }
+
+    &--5 {
+      span {
+        font-size: 34rem;
+        left: -4.2rem;
+        top: -0.08rem;
+      }
+    }
+
+    &--6 {
+      span {
+        left: -5.1rem;
+        top: -0.04rem;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 2rem 4rem 1rem;
+    z-index: 5;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 0 0 2.9rem;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    max-width: 21rem;
+  }
+}

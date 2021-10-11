@@ -1,0 +1,134 @@
+.form {
+  background-color: $white;
+  padding: 4.5rem 4rem 3.2rem;
+  border-radius: 2rem;
+  box-shadow: 0 80px 105px rgbargba(255, 232, 232, 0.1);
+}
+
+.form__input,
+.form__textarea textarea {
+  margin-bottom: 2rem;
+}
+
+.form__input input,
+.form__textarea textarea {
+  @include font(1.6rem, 2.2rem, 400);
+  padding: 1.8rem 2.3rem 1.8rem 2.5rem;
+  width: 100%;
+  display: block;
+  color: $dark;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(#0a142f, 0.3);
+
+  @media (max-width: $mobile) {
+    font-size: 1.9rem;
+  }
+
+  &::placeholder {
+    opacity: 0.6;
+  }
+}
+
+.form__textarea textarea {
+  min-height: 16.5rem;
+  resize: none;
+  width: 100%;
+}
+
+.form__input--checkbox {
+  display: flex;
+  position: relative;
+  color: $checkbox;
+  margin-bottom: 3rem;
+
+  & input {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    border: none;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 2.2rem;
+    height: 2.4rem;
+    top: 0;
+    left: 0;
+
+    &:checked ~ label::after {
+      display: block;
+    }
+  }
+
+  & label {
+    padding-left: 4rem;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    @include font(1.4rem, 2.4rem, 400);
+
+    @media (max-width: $mobile) {
+      font-size: 1.7rem;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 2.2rem;
+      height: 2.4rem;
+      left: 0;
+      top: 0;
+      border: 1px solid rgba($dark, 0.3);
+      border-radius: 0.3rem;
+    }
+
+    &::after {
+      display: none;
+      position: absolute;
+      content: "";
+      width: 1.2rem;
+      height: 0.8rem;
+      left: 0.6rem;
+      top: 0.6rem;
+      transform: rotate(-45deg);
+      border-left: 2px solid rgba($dark, 0.8);
+      border-bottom: 2px solid rgba($dark, 0.8);
+    }
+  }
+}
+
+.form__submit {
+  @include font(1.4rem, 1.9rem, 500);
+  background-color: $yellow;
+  padding: 1.5rem 5rem;
+  border-radius: 2rem;
+  color: $black;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 24px 34px rgba(32, 70, 100, 0.1);
+
+  @media (max-width: $mobile) {
+    font-size: 1.9rem;
+  }
+
+  &:hover {
+    box-shadow: 0 0 1.5rem $yellow;
+
+    &:disabled {
+      box-shadow: none;
+    }
+  }
+
+  &:disabled {
+    background-color: $logo;
+  }
+}
+
+.form__link {
+  color: $black;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

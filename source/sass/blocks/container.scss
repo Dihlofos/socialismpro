@@ -1,0 +1,24 @@
+.container {
+  max-width: 149.2rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  box-sizing: content-box;
+  overflow: hidden;
+
+  @media (max-width: $laptop) {
+    min-width: 67.8rem;
+    padding: 0 4.5rem;
+  }
+
+  @media (max-width: $tablet) {
+    min-width: initial;
+    max-width: initial;
+    padding: 0 2rem;
+  }
+
+  &.intro__container {
+    @media (max-width: $tablet) {
+      padding: 0;
+    }
+  }
+}

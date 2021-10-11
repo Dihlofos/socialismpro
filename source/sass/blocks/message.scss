@@ -1,0 +1,234 @@
+.message {
+  display: flex;
+  align-items: flex-end;
+
+  &__text {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.5;
+
+    .message--full & {
+      width: 42.6rem;
+
+      @media (max-width: 1750px) {
+        width: 100%;
+        margin: 0 0 2rem;
+      }
+    }
+  }
+
+  &__dialog {
+    position: relative;
+    padding: 4.8rem 3rem 4.8rem 6.8rem;
+    border-radius: 50px;
+    color: $black;
+    flex-grow: 1;
+
+    @media (max-width: $mobile) {
+      padding: 1.8rem 2rem 2.8rem 4.8rem;
+    }
+
+    .message--left & {
+      background-color: $bluyewhite;
+      margin: 0 0 0 3rem;
+
+      @media (max-width: $mobile) {
+        margin: 0 0 0 2rem;
+      }
+
+      b {
+        background-color: $grey;
+      }
+    }
+
+    .message--right & {
+      background-color: $yellowLight;
+      margin: 0 2rem 0 0;
+
+      @media (max-width: $mobile) {
+        margin: 0 1rem 0 0;
+      }
+
+      b {
+        background-color: $yellow;
+      }
+    }
+
+    .message--full & {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 4.9rem 5rem 4.5rem 6rem;
+
+      @media (max-width: $mobile) {
+        padding: 4.9rem 2rem 4.5rem 2rem;
+      }
+    }
+  }
+
+  &__dialogFig {
+    position: absolute;
+    bottom: 0;
+
+    width: 6rem;
+    height: 5rem;
+
+    .message--right & {
+      background-image: url("../img/dialogRight.svg");
+      background-position: 100% 100%;
+      right: -2.2rem;
+      background-repeat: no-repeat;
+    }
+
+    .message--left & {
+      background-image: url("../img/dialogLeft.svg");
+      background-position: 0 100%;
+      left: -1.8rem;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__dialogImage {
+    position: absolute;
+    top: -3.4rem;
+    right: -3.4rem;
+
+    @media (max-width: $mobile) {
+      width: 8rem;
+      bottom: -2.4rem;
+      right: -0.4rem;
+      top: auto;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    right: -10rem;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__avatar {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+
+    .message--right & {
+      margin-bottom: -1rem;
+    }
+    .message--left & {
+      margin-bottom: -4rem;
+      align-items: flex-start;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+    }
+
+    @media (max-width: $mobile) {
+      width: 6rem;
+    }
+  }
+
+  &__image {
+    margin: 0 0 1.1rem;
+  }
+
+  &__team {
+    display: flex;
+    list-style: none;
+    margin: 0 -2rem;
+    padding: 0 0 0 6rem;
+
+    @media (max-width: $laptop) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 0;
+      justify-content: center;
+    }
+  }
+
+  &__member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12.3rem;
+    margin: 0 1rem;
+    img {
+      filter: grayscale(1);
+    }
+    p {
+      text-align: center;
+      margin: 0;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+    }
+
+    @media (max-width: $laptop) {
+      margin: 0 1rem 1rem;
+    }
+  }
+
+  &__memberImg {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $black;
+    width: 104px;
+    height: 104px;
+    margin: 0 0 1.2rem;
+
+    .message__member--bigpad & {
+      padding: 1.3rem;
+    }
+  }
+
+  &--right {
+    width: 57.5rem;
+    align-self: flex-end;
+
+    @media (max-width: $laptop) {
+      margin: 0 0 4rem;
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  &--left {
+    width: 70.5rem;
+    align-self: flex-start;
+    margin: 0 0 3.2rem;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin: 0 0 6rem;
+    }
+  }
+
+  &--full {
+    margin: 7.1rem 0 10rem;
+    width: 108%;
+
+    @media (max-width: 1750px) {
+      width: 100%;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0 0 6rem;
+    }
+  }
+}

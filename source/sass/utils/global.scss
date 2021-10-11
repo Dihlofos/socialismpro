@@ -1,0 +1,99 @@
+html {
+  @include font(10px, 10px, 400);
+
+  @media (max-width: $desktop) {
+    @include font(8px, 8px, 400);
+  }
+
+  @media (max-width: $laptop) {
+    @include font(8px, 8px, 400);
+  }
+}
+
+body {
+  @include font(1.6rem, 2.1rem, 400);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: $montserrat;
+  background-color: $black;
+  color: $white;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  @media (max-width: $laptop) {
+    // шаблон медиа-запроса desktop-first
+  }
+
+  @media (min-resolution: $extra) {
+    // шаблон для фонового изображения на экранах с повышенной плотностью пикселей
+  }
+}
+
+body,
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grecaptcha-badge {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.yellowBg {
+  position: relative;
+  background-color: $yellow;
+
+  &__arrowBottom {
+    position: absolute;
+    z-index: 5;
+    bottom: -26rem;
+    left: 58rem;
+
+    @media (max-width: 1800px) {
+      display: none;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -45rem;
+    width: 256%;
+    height: 117rem;
+    left: -115px;
+    background-color: $yellow;
+    border-radius: 43%;
+    overflow: hidden;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -16rem;
+    right: -115px;
+    height: 47rem;
+    width: 256%;
+    background-color: $yellow;
+    border-radius: 43%;
+    overflow: hidden;
+  }
+}

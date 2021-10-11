@@ -1,0 +1,28 @@
+.messages {
+  position: relative;
+  z-index: 6;
+
+  &--team {
+    padding: 0 0 10rem;
+
+    @media (max-width: $mobile) {
+      padding: 0 0 2rem;
+    }
+  }
+
+  &__container {
+    overflow: visible;
+  }
+
+  &__list {
+    padding: 5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+
+    @media (max-width: $laptop) {
+      padding: 2rem 0 0;
+    }
+  }
+}
