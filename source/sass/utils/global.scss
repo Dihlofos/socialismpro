@@ -8,6 +8,10 @@ html {
   @media (max-width: $laptop) {
     @include font(8px, 8px, 400);
   }
+
+  @media (max-height: 864px) and (min-width: 1440px) {
+    @include font(8px, 8px, 400);
+  }
 }
 
 body {

@@ -107,6 +107,7 @@
 
   &__manImage {
     margin: 0 0 4.7rem;
+    width: 20rem;
 
     @media (max-width: $tablet) {
       width: 18rem;
@@ -122,6 +123,7 @@
     fill: none;
     stroke: #fff;
     margin: 0 0 4.5rem;
+    width: 77.3rem;
 
     @media (max-width: $desktop) {
       max-width: 60rem;
