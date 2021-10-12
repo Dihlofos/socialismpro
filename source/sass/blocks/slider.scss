@@ -77,12 +77,8 @@
     padding-left: calc((100% - 149.2rem) / 2 + 15.5rem);
   }
 
-  .swiper-slide-next + .swiper-slide {
-    opacity: 0.73;
-  }
-
   .swiper-slide-next + .swiper-slide + .swiper-slide {
-    opacity: 0.36;
+    opacity: 0.73;
   }
 
   .swiper__nav {
