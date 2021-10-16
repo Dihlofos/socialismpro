@@ -59,6 +59,8 @@
   }
 
   .swiper-slide {
+    opacity: 0;
+    animation-duration: 0.5s;
     width: 45.9rem !important;
     height: 30.4rem !important;
     transition: opacity 0.2s ease-in;

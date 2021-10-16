@@ -3,6 +3,7 @@
   align-items: flex-end;
 
   &__text {
+    animation-delay: 0.3s;
     margin: 0;
     font-size: 2rem;
     line-height: 2.7rem;
@@ -23,12 +24,14 @@
     border-radius: 50px;
     color: $black;
     flex-grow: 1;
+    opacity: 0;
 
     @media (max-width: $mobile) {
       padding: 1.8rem 2rem 2.8rem 4.8rem;
     }
 
     .message--left & {
+      transform-origin: 0 100%;
       background-color: $bluyewhite;
       margin: 0 0 0 3rem;
 
@@ -42,6 +45,7 @@
     }
 
     .message--right & {
+      transform-origin: 100% 0;
       background-color: $yellowLight;
       margin: 0 2rem 0 0;
 
@@ -89,6 +93,7 @@
   }
 
   &__dialogImage {
+    animation-delay: 0.5s;
     position: absolute;
     top: -5.4rem;
     right: -3.4rem;
@@ -107,6 +112,7 @@
   }
 
   &__arrow {
+    animation-delay: 0.3s;
     position: absolute;
     top: 50%;
     right: -10rem;
@@ -147,6 +153,7 @@
   }
 
   &__team {
+    animation-delay: 0.5s;
     display: flex;
     list-style: none;
     margin: 0 -2rem;

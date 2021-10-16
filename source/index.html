@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="header" id="header">
+  <header class="header fromTop" id="header" style=" animation-duration: 0.5s;">
     <h1 class="visually-hidden">Ивент-агентство Socialism.pro</h1>
     <div class=" header__container container">
       <div class="header__logo">
@@ -43,23 +43,25 @@
   <main style="overflow: hidden;">
     <section class="intro" id="intro">
       <div class="intro__bgColor"></div>
-      <div class="intro__bg"></div>
+      <div class="intro__bg fadeIn" style="animation-duration: 1.3s;"></div>
       <div class="intro__container">
         <div class="intro__wrapper">
           <div class="intro__wrapperBgContainer">
-            <img class="intro__wrapperBg" src="img/intro_wrapper_bg.svg" width="996" height="752" />
-            <img class="intro__wrapperBorder" src="img/intro_wrapper_border.svg" width="1000" height="774" />
+            <img class="intro__wrapperBg showFromRotate" src="img/intro_wrapper_bg.svg" width="996" height="752" />
+            <img class="intro__wrapperBorder showFromRotate" src="img/intro_wrapper_border.svg" width="1000"
+              height="774" style="animation-delay: 0.2s" />
 
           </div>
 
           <div class="intro__content">
-            <img class="intro__manImage" src="img/man.svg" width="200" height="200" />
-            <h2 class="intro__logo">
+            <img class="intro__manImage fromTop" src="img/man.svg" width="200" height="200"
+              style="animation-delay: 0.3s" />
+            <h2 class="intro__logo fromTop" style="animation-delay: 0.4s">
               <img src="img/icon-logo-white.svg" width="773" height="70" />
             </h2>
-            <div class="intro__subtitle">Ивент-агенство</div>
-            <div class="intro__text">Время ярких событий</div>
-            <div class="intro__lines"></div>
+            <div class="intro__subtitle fromTop" style="animation-delay: 0.5s">Ивент-агенство</div>
+            <div class="intro__text fromTop" style="animation-delay: 0.6s">Время ярких событий</div>
+            <div class="intro__lines  fromTop" style="animation-delay: 0.7s"></div>
 
           </div>
         </div>
@@ -68,11 +70,11 @@
       </div>
     </section>
     <section class="about" id="about">
-      <div class="about__bg"></div>
+      <div class="about__bg" style="animation-duration: 1.3s; animation-delay: 0.5s"></div>
       <div class="about__container">
         <h2 class="visually-hidden">О нас</h2>
         <ul class="about__list">
-          <li class="about__item">
+          <li class="about__item" style="animation-delay: 0.1s;">
             <div class="about__number about__number--1">
               <span>1</span>
             </div>
@@ -83,7 +85,7 @@
               </p>
             </div>
           </li>
-          <li class="about__item">
+          <li class="about__item" style="animation-delay: 0.2s;">
             <div class="about__number about__number--2"><span>2</span></div>
             <div class="about__content">
               <h4 class="about__title">Тренды и технологии</h4>
@@ -92,7 +94,7 @@
               </p>
             </div>
           </li>
-          <li class="about__item">
+          <li class="about__item" style="animation-delay: 0.3s;">
             <div class="about__number about__number--3"><span>3</span></div>
             <div class="about__content">
               <h4 class="about__title">Топовые локации</h4>
@@ -101,7 +103,7 @@
               </p>
             </div>
           </li>
-          <li class="about__item">
+          <li class="about__item" style="animation-delay: 0.4s;">
             <div class="about__number about__number--4"><span>4</span></div>
             <div class="about__content">
               <h4 class="about__title">Работа с тендерами</h4>
@@ -110,7 +112,7 @@
               </p>
             </div>
           </li>
-          <li class="about__item">
+          <li class="about__item" style="animation-delay: 0.5s;">
             <div class="about__number about__number--5"><span>5</span></div>
             <div class="about__content">
               <h4 class="about__title">Пул артистов</h4>
@@ -119,7 +121,7 @@
               </p>
             </div>
           </li>
-          <li class="about__item">
+          <li class="about__item" style="animation-delay: 0.6s;">
             <div class="about__number about__number--6"><span>6</span></div>
             <div class="about__content">
               <h4 class="about__title">Поддержка клиентов 24/7</h4>
@@ -200,37 +202,37 @@
       <img class="slider__waveImg" src="img/wave.svg" width="338" height="23" />
       <img class="slider__boxImg" src="img/box.svg" width="348" height="343" />
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide" style="animation-delay: 0.1s;">
           <picture>
             <source type="image/webp" srcset="img/soc1.webp" />
             <img src="img/soc1.jpg" width="459" height="304" alt="Фото 1" />
           </picture>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" style="animation-delay: 0.2s;">
           <picture>
             <source type="image/webp" srcset="img/soc2.webp" />
             <img src="img/soc2.jpg" width="459" height="304" alt="Фото 2" />
           </picture>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" style="animation-delay: 0.3s;">
           <picture>
             <source type="image/webp" srcset="img/soc3.webp" />
             <img src="img/soc3.jpg" width="459" height="304" alt="Фото 3" />
           </picture>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" style="animation-delay: 0.4s;">
           <picture>
             <source type="image/webp" srcset="img/soc4.webp" />
             <img src="img/soc4.jpg" width="459" height="304" alt="Фото 4" />
           </picture>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" style="animation-delay: 0.5s;">
           <picture>
             <source type="image/webp" srcset="img/soc5.webp" />
             <img src="img/soc5.jpg" width="459" height="304" alt="Фото 4" />
           </picture>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" style="animation-delay: 0.6s;">
           <picture>
             <source type="image/webp" srcset="img/soc6.webp" />
             <img src="img/soc6.jpg" width="459" height="304" alt="Фото 4" />
@@ -276,37 +278,37 @@
     </section>
     <div class="slider swiper-container js-slider">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide" style="animation-delay: 0.1s;">
           <picture>
             <source type="image/webp" srcset="img/28201.webp" />
             <img src="img/28201.jpg" width="459" height="304" alt="Фото 1" />
           </picture>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" style="animation-delay: 0.2s;">
           <picture>
             <source type="image/webp" srcset="img/28202.webp" />
             <img src="img/28202.jpg" width="459" height="304" alt="Фото 2" />
           </picture>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" style="animation-delay: 0.3s;">
           <picture>
             <source type="image/webp" srcset="img/28203.webp" />
             <img src="img/28203.jpg" width="459" height="304" alt="Фото 3" />
           </picture>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" style="animation-delay: 0.4s;">
           <picture>
             <source type="image/webp" srcset="img/28204.webp" />
             <img src="img/28204.jpg" width="459" height="304" alt="Фото 4" />
           </picture>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" style="animation-delay: 0.5s;">
           <picture>
             <source type="image/webp" srcset="img/28205.webp" />
             <img src="img/28205.jpg" width="459" height="304" alt="Фото 4" />
           </picture>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" style="animation-delay: 0.6s;">
           <picture>
             <source type="image/webp" srcset="img/28206.webp" />
             <img src="img/28206.jpg" width="459" height="304" alt="Фото 4" />
@@ -360,37 +362,37 @@
         <img class="slider__zigzagImg" src="img/zigzag.svg" width="250" height="155" />
         <img class="slider__halfCircleImg" src="img/halfcircle.svg" width="162" height="187" />
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide" style="animation-delay: 0.1s;">
             <picture>
               <source type="image/webp" srcset="img/active1.webp" />
               <img src="img/active1.jpg" width="459" height="304" alt="Фото 1" />
             </picture>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" style="animation-delay: 0.2s;">
             <picture>
               <source type="image/webp" srcset="img/active2.webp" />
               <img src="img/active2.jpg" width="459" height="304" alt="Фото 2" />
             </picture>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" style="animation-delay: 0.3s;">
             <picture>
               <source type="image/webp" srcset="img/active3.webp" />
               <img src="img/active3.jpg" width="459" height="304" alt="Фото 3" />
             </picture>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" style="animation-delay: 0.4s;">
             <picture>
               <source type="image/webp" srcset="img/active4.webp" />
               <img src="img/active4.jpg" width="459" height="304" alt="Фото 4" />
             </picture>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" style="animation-delay: 0.5s;">
             <picture>
               <source type="image/webp" srcset="img/active5.webp" />
               <img src="img/active5.jpg" width="459" height="304" alt="Фото 4" />
             </picture>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" style="animation-delay: 0.6s;">
             <picture>
               <source type="image/webp" srcset="img/active6.webp" />
               <img src="img/active6.jpg" width="459" height="304" alt="Фото 4" />
@@ -618,7 +620,8 @@
   </a>
   <!-- Recaptcha config-->
   <script src="https://www.google.com/recaptcha/api.js?render=6LczUdEaAAAAACImrHbKWiSSutDmsNCH1sC9zXbu"></script>
-
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

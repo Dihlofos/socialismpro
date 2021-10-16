@@ -78,6 +78,8 @@
 }
 
 .contacts__manImg {
+  opacity: 0;
+  animation-delay: 0.1s;
   position: relative;
   z-index: 2;
   margin: 0 0 0 -3.3rem;
