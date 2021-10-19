@@ -2,10 +2,12 @@
 (function () {
   // init controller
   const controller = new ScrollMagic.Controller();
+  const vw = window.innerWidth;
+  const offset = vw > 767 ? 300 : 150;
 
   const commonOptions = {
     reverse: false,
-    offset: 300,
+    offset,
     triggerHook: "onEnter",
   };
 
@@ -19,12 +21,15 @@
     .addTo(controller);
 
   //about items
-  new ScrollMagic.Scene({
-    ...commonOptions,
-    triggerElement: ".about__item",
-  })
-    .setClassToggle(".about__item", "fromTop")
-    .addTo(controller);
+  document.querySelectorAll(".about__item").forEach((item) => {
+    new ScrollMagic.Scene({
+      ...commonOptions,
+      offset: offset - 100,
+      triggerElement: item,
+    })
+      .setClassToggle(item, "fromTop")
+      .addTo(controller);
+  });
 
   //sliders
   document.querySelectorAll(".js-slider").forEach((item) => {
