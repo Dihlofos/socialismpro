@@ -131,6 +131,11 @@
 .nav__mobLink {
   position: relative;
   top: -0.2rem;
+  display: none;
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
 }
 
 .nav__mobLink .nav__link {
