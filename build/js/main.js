@@ -131,7 +131,11 @@
             for (let [key, value] of formData.entries()) {
               res[key] = value;
             }
-            sendEmail(res);
+            console.log("all correct, but not do anything further");
+            // sendEmail(res);
+          })
+          .catch((error) => {
+            formWrong.style.opaciy = 1;
           });
       });
     });
