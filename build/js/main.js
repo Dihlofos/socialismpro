@@ -169,13 +169,14 @@
   if (burger && nav) {
     // menu toggle
     burger.addEventListener("click", () => {
-      nav.classList.toggle("js-open");
-      burger.classList.toggle("js-open");
-
       if (nav.classList.contains("js-open")) {
         disableBodyScroll(burger);
+        nav.classList.remove("js-open");
+        burger.classList.add("js-open");
       } else {
         enableBodyScroll(burger);
+        nav.classList.add("js-open");
+        burger.classList.remove("js-open");
       }
     });
 
