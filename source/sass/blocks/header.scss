@@ -11,6 +11,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $mobile) {
+      overflow: visible !important;
+    }
   }
 
   &__logo {
@@ -19,7 +23,7 @@
     }
 
     @media (max-width: $mobile) {
-      width: 29rem;
+      width: 22rem;
 
       svg {
         width: 100%;
