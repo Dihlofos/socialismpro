@@ -85,14 +85,14 @@
   &__content {
     position: relative;
     z-index: 2;
-    padding: 13rem 0 0 13rem;
+    padding: 25rem 0 0 13rem;
 
     @media (max-width: $tablet) {
-      padding: 18rem 0 0 13rem;
+      padding: 28rem 0 0 13rem;
     }
 
     @media (max-width: $mobile) {
-      padding: 16rem 0 0 9rem;
+      padding: 22rem 0 0 9rem;
     }
   }
 

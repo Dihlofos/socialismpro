@@ -95,8 +95,13 @@
   &__dialogImage {
     animation-delay: 0.5s;
     position: absolute;
-    top: -7.4rem;
-    right: -7.4rem;
+    top: -5.4rem;
+    right: -6.4rem;
+
+    @media (max-height: 864px) and (min-width: 1440px) {
+      top: -7.4rem;
+      right: -7.4rem;
+    }
 
     @media (max-width: $desktop) {
       top: -5.4rem;
