@@ -114,6 +114,22 @@
       left: -4.4rem;
       right: auto;
     }
+
+    &--big {
+      width: 15rem;
+      height: 15rem;
+      object-fit: contain;
+      background-color: $white;
+      border-radius: 50%;
+
+      @media (max-width: $mobile) {
+        width: 8rem;
+        height: 8rem;
+        top: 0;
+        left: -4.4rem;
+        right: auto;
+      }
+    }
   }
 
   &__arrow {
