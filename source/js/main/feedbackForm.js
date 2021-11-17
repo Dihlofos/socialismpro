@@ -36,7 +36,7 @@
     formSubmitButton.setAttribute("disabled", true);
     Email.send({
       SecureToken: "e8ae44f3-777e-40ec-a616-3f2aad062e93",
-      To: "event.pro.info@yandex.ru",
+      To: "Privet.spm@yandex.ru",
       From: "maria@eventpro.ru.com",
       Subject: `${name} sent you a message`,
       Body: `
